@@ -2,7 +2,7 @@
 
 Detect when `Install macOS Monterey.app` installer application has launched, terminate the process and display an alert.
 
-![montereyblocker](https://raw.githubusercontent.com/Thewile/montereyblocker/main/screenshot.jpg)
+![montereyblocker](https://raw.githubusercontent.com/Theile/montereyblocker/main/screenshot.jpg)
 
 This project is totally copied from the origianl version it is forked from. 
 
