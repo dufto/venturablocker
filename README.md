@@ -6,7 +6,7 @@ Detect when `Install macOS Monterey.app` installer application has launched, ter
 
 ![montereyblocker](https://raw.githubusercontent.com/Theile/montereyblocker/main/screenshot.jpg)
 
-_This project is totally copied from the original version it is forked from._
+_This project is totally copied from the original bigsurblocker from which it is forked from._
 
 To fully uninstall `montereyblocker`, run the following (as root or with sudo), or deploy `montereyblocker-remove.sh`:
 ```
@@ -20,6 +20,8 @@ rm -f /usr/local/bin/montereyblocker
 
 pkgutil --forget dk.envo-it.montereyblocker
 ```
+
+_See [hjuutilainen/bigsurblocker](https://github.com/hjuutilainen/bigsurblocker) for the original software for blocking Big Sur and README there._
 
 
 The rest of this README is from that original project:
