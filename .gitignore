@@ -1,5 +1,5 @@
 *.pkg
 .DS_Store
 build
-/bigsurblocker-munkipkg/payload/usr/local/bin/bigsurblocker
 /montereyblocker-pkg/payload/usr/local/bin/montereyblocker
+/montereyblocker-pkg/buildmontereyblockerPkg.sh
