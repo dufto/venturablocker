@@ -25,6 +25,7 @@
 /* Begin PBXFileReference section */
 		265C516F253C6D6700D868C4 /* montereyblocker */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = montereyblocker; sourceTree = BUILT_PRODUCTS_DIR; };
 		265C5172253C6D6700D868C4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		70848CD226738155008A3EE0 /* montereyblocker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = montereyblocker.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +58,7 @@
 		265C5171253C6D6700D868C4 /* montereyblocker */ = {
 			isa = PBXGroup;
 			children = (
+				70848CD226738155008A3EE0 /* montereyblocker.entitlements */,
 				265C5172253C6D6700D868C4 /* main.m */,
 			);
 			path = montereyblocker;
@@ -240,12 +242,15 @@
 		265C5177253C6D6700D868C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_ENTITLEMENTS = montereyblocker/montereyblocker.entitlements;
+				CODE_SIGN_IDENTITY = "Developer ID Application: ENVO IT AS (FXW6QXBFW5)";
 				CODE_SIGN_STYLE = Manual;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = FXW6QXBFW5;
 				DSTROOT = $SRCROOT/build/pkgroot;
 				ENABLE_HARDENED_RUNTIME = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				OTHER_CODE_SIGN_FLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "dk.envo-it.montereyblocker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -255,12 +260,14 @@
 		265C5178253C6D6700D868C4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_ENTITLEMENTS = montereyblocker/montereyblocker.entitlements;
+				CODE_SIGN_IDENTITY = "Developer ID Application: ENVO IT AS (FXW6QXBFW5)";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = FXW6QXBFW5;
 				DSTROOT = $SRCROOT/build/pkgroot;
 				ENABLE_HARDENED_RUNTIME = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				OTHER_CODE_SIGN_FLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "dk.envo-it.montereyblocker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
