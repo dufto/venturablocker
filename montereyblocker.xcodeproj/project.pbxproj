@@ -23,7 +23,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		265C516F253C6D6700D868C4 /* bigsurblocker */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = bigsurblocker; sourceTree = BUILT_PRODUCTS_DIR; };
+		265C516F253C6D6700D868C4 /* montereyblocker */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = montereyblocker; sourceTree = BUILT_PRODUCTS_DIR; };
 		265C5172253C6D6700D868C4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -41,7 +41,7 @@
 		265C5166253C6D6700D868C4 = {
 			isa = PBXGroup;
 			children = (
-				265C5171253C6D6700D868C4 /* bigsurblocker */,
+				265C5171253C6D6700D868C4 /* montereyblocker */,
 				265C5170253C6D6700D868C4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,25 +49,25 @@
 		265C5170253C6D6700D868C4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				265C516F253C6D6700D868C4 /* bigsurblocker */,
+				265C516F253C6D6700D868C4 /* montereyblocker */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		265C5171253C6D6700D868C4 /* bigsurblocker */ = {
+		265C5171253C6D6700D868C4 /* montereyblocker */ = {
 			isa = PBXGroup;
 			children = (
 				265C5172253C6D6700D868C4 /* main.m */,
 			);
-			path = bigsurblocker;
+			path = montereyblocker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		265C516E253C6D6700D868C4 /* bigsurblocker */ = {
+		265C516E253C6D6700D868C4 /* montereyblocker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 265C5176253C6D6700D868C4 /* Build configuration list for PBXNativeTarget "bigsurblocker" */;
+			buildConfigurationList = 265C5176253C6D6700D868C4 /* Build configuration list for PBXNativeTarget "montereyblocker" */;
 			buildPhases = (
 				265C516B253C6D6700D868C4 /* Sources */,
 				265C516C253C6D6700D868C4 /* Frameworks */,
@@ -77,9 +77,9 @@
 			);
 			dependencies = (
 			);
-			name = bigsurblocker;
+			name = montereyblocker;
 			productName = bigsurblocker;
-			productReference = 265C516F253C6D6700D868C4 /* bigsurblocker */;
+			productReference = 265C516F253C6D6700D868C4 /* montereyblocker */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -88,14 +88,14 @@
 		265C5167253C6D6700D868C4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1220;
+				LastUpgradeCheck = 1250;
 				TargetAttributes = {
 					265C516E253C6D6700D868C4 = {
 						CreatedOnToolsVersion = 12.2;
 					};
 				};
 			};
-			buildConfigurationList = 265C516A253C6D6700D868C4 /* Build configuration list for PBXProject "bigsurblocker" */;
+			buildConfigurationList = 265C516A253C6D6700D868C4 /* Build configuration list for PBXProject "montereyblocker" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -108,7 +108,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				265C516E253C6D6700D868C4 /* bigsurblocker */,
+				265C516E253C6D6700D868C4 /* montereyblocker */,
 			);
 		};
 /* End PBXProject section */
@@ -161,7 +161,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
+				ENABLE_TESTABILITY = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -179,7 +179,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -232,6 +232,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -241,11 +242,11 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 8XXWJ76X9Y;
+				DEVELOPMENT_TEAM = FXW6QXBFW5;
 				DSTROOT = $SRCROOT/build/pkgroot;
 				ENABLE_HARDENED_RUNTIME = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				PRODUCT_BUNDLE_IDENTIFIER = com.hjuutilainen.bigsurblocker;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "dk.envo-it.montereyblocker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
@@ -256,11 +257,11 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 8XXWJ76X9Y;
+				DEVELOPMENT_TEAM = FXW6QXBFW5;
 				DSTROOT = $SRCROOT/build/pkgroot;
 				ENABLE_HARDENED_RUNTIME = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				PRODUCT_BUNDLE_IDENTIFIER = com.hjuutilainen.bigsurblocker;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "dk.envo-it.montereyblocker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
@@ -269,7 +270,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		265C516A253C6D6700D868C4 /* Build configuration list for PBXProject "bigsurblocker" */ = {
+		265C516A253C6D6700D868C4 /* Build configuration list for PBXProject "montereyblocker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				265C5174253C6D6700D868C4 /* Debug */,
@@ -278,7 +279,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		265C5176253C6D6700D868C4 /* Build configuration list for PBXNativeTarget "bigsurblocker" */ = {
+		265C5176253C6D6700D868C4 /* Build configuration list for PBXNativeTarget "montereyblocker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				265C5177253C6D6700D868C4 /* Debug */,

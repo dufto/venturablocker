@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>Label</key>
-	<string>com.hjuutilainen.bigsurblocker</string>
+	<string>dk.envo-it.montereyblocker</string>
 	<key>ProgramArguments</key>
 	<array>
-		<string>/usr/local/bin/bigsurblocker</string>
+		<string>/usr/local/bin/montereyblocker</string>
 	</array>
 	<key>RunAtLoad</key>
 	<true />

@@ -1,10 +1,26 @@
 # Monterey Blocker
 
+I’m currently missing my developer certificate to correctly sign the app, so I will release this when I get that.
+
 Detect when `Install macOS Monterey.app` installer application has launched, terminate the process and display an alert.
 
 ![montereyblocker](https://raw.githubusercontent.com/Theile/montereyblocker/main/screenshot.jpg)
 
-This project is totally copied from the origianl version it is forked from. 
+_This project is totally copied from the original version it is forked from._
+
+To fully uninstall `montereyblocker`, run the following (as root or with sudo), or deploy `montereyblocker-remove.sh`:
+```
+current_user_uid=$( echo "show State:/Users/ConsoleUser" | scutil | awk '/UID :/ && ! /loginwindow/ { print $3 }' )
+
+launchd_item_path="/Library/LaunchAgents/dk.envo-it.montereyblocker.plist"
+launchctl bootout gui/${current_user_uid} "${launchd_item_path}"
+
+rm -f /Library/LaunchAgents/dk.envo-it.montereyblocker.plist
+rm -f /usr/local/bin/montereyblocker
+
+pkgutil --forget dk.envo-it.montereyblocker
+```
+
 
 The rest of this README is from that original project:
 

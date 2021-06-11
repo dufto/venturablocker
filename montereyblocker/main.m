@@ -1,8 +1,9 @@
 //
 //  main.m
-//  bigsurblocker
+//  montereyblocker
 //
-//  Created by Hannes Juutilainen on 18.10.2020.
+//  bigsurblocker created by Hannes Juutilainen on 18.10.2020.
+//  Modified for Monterey by Søren Theilgaard on 10.06.2021
 //
 
 #import <Foundation/Foundation.h>
@@ -36,14 +37,14 @@
 
         // Load our user defaults suite. This will allow the alert text
         // to be specified with a configuration profile
-        NSUserDefaults *userDefaults = [[NSUserDefaults alloc] initWithSuiteName:@"com.hjuutilainen.bigsurblocker"];
+        NSUserDefaults *userDefaults = [[NSUserDefaults alloc] initWithSuiteName:@"com.hjuutilainen.montereyblocker"];
 
         NSArray *bundleIDsToBlock = [userDefaults arrayForKey:@"bundleIDsToBlock"];
         if (!bundleIDsToBlock) {
             bundleIDsToBlock = @[
-                @"com.apple.InstallAssistant.BigSur",
-                @"com.apple.InstallAssistant.macOSBigSur",
-                @"com.apple.InstallAssistant.Seed.macOS1016Seed1",
+                @"com.apple.InstallAssistant.Monterey",
+                @"com.apple.InstallAssistant.macOSMonterey",
+                @"com.apple.InstallAssistant.Seed.macOS12Seed1",
             ];
         }
         if ([bundleIDsToBlock containsObject:bundleID]) {
@@ -119,7 +120,7 @@
 
 - (BOOL)alertShowHelp:(NSAlert *)alert
 {
-    NSUserDefaults *userDefaults = [[NSUserDefaults alloc] initWithSuiteName:@"com.hjuutilainen.bigsurblocker"];
+    NSUserDefaults *userDefaults = [[NSUserDefaults alloc] initWithSuiteName:@"com.hjuutilainen.montereyblocker"];
     NSString *helpURLString = [userDefaults stringForKey:@"HelpURL"];
     if (helpURLString) {
         NSURL *helpURL = [NSURL URLWithString:helpURLString];
