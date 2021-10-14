@@ -1,7 +1,5 @@
 # Monterey Blocker
 
-I’m currently missing my developer certificate to correctly sign the app, so I will release this when I get that.
-
 Detect when `Install macOS Monterey.app` installer application has launched, terminate the process and display an alert.
 
 ![montereyblocker](https://raw.githubusercontent.com/Theile/montereyblocker/main/screenshot.jpg)
