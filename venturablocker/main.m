@@ -4,6 +4,7 @@
 //
 //  bigsurblocker created by Hannes Juutilainen on 18.10.2020.
 //  Modified for Monterey by Søren Theilgaard on 10.06.2021
+//  Modified for Ventura by Tommy Dufault on 10.06.2022
 //
 
 #import <Foundation/Foundation.h>
@@ -42,9 +43,11 @@
         NSArray *bundleIDsToBlock = [userDefaults arrayForKey:@"bundleIDsToBlock"];
         if (!bundleIDsToBlock) {
             bundleIDsToBlock = @[
-                @"com.apple.InstallAssistant.Monterey",
-                @"com.apple.InstallAssistant.macOSMonterey",
-                @"com.apple.InstallAssistant.Seed.macOS12Seed1",
+                @"com.apple.InstallAssistant.Ventura",
+                @"com.apple.InstallAssistant.macOSventura",
+                @"com.apple.InstallAssistant.Seed.macOS13Seed1",
+                @"com.apple.InstallAssistant.Seed.macOS13Seed2",
+                @"com.apple.InstallAssistant.Seed.macOS13Seed3",
             ];
         }
         if ([bundleIDsToBlock containsObject:bundleID]) {
@@ -120,7 +123,7 @@
 
 - (BOOL)alertShowHelp:(NSAlert *)alert
 {
-    NSUserDefaults *userDefaults = [[NSUserDefaults alloc] initWithSuiteName:@"com.hjuutilainen.montereyblocker"];
+    NSUserDefaults *userDefaults = [[NSUserDefaults alloc] initWithSuiteName:@"com.hjuutilainen.venturablocker"];
     NSString *helpURLString = [userDefaults stringForKey:@"HelpURL"];
     if (helpURLString) {
         NSURL *helpURL = [NSURL URLWithString:helpURLString];

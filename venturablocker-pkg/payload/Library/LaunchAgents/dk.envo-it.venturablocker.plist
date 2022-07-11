@@ -3,15 +3,15 @@
 <plist version="1.0">
 <dict>
 	<key>Label</key>
-	<string>dk.envo-it.montereyblocker</string>
+	<string>dk.envo-it.venturablocker</string>
 	<key>ProgramArguments</key>
 	<array>
-		<string>/usr/local/bin/montereyblocker</string>
+		<string>/usr/local/bin/venturablocker</string>
 	</array>
 	<key>RunAtLoad</key>
-	<true />
+	<true/>
 	<key>KeepAlive</key>
-	<true />
+	<true/>
 	<key>LimitLoadToSessionType</key>
 	<string>Aqua</string>
 </dict>

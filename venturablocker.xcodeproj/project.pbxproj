@@ -23,9 +23,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		265C516F253C6D6700D868C4 /* montereyblocker */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = montereyblocker; sourceTree = BUILT_PRODUCTS_DIR; };
+		265C516F253C6D6700D868C4 /* venturablocker */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = venturablocker; sourceTree = BUILT_PRODUCTS_DIR; };
 		265C5172253C6D6700D868C4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		70848CD226738155008A3EE0 /* montereyblocker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = montereyblocker.entitlements; sourceTree = "<group>"; };
+		70848CD226738155008A3EE0 /* venturablocker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = venturablocker.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,7 +42,7 @@
 		265C5166253C6D6700D868C4 = {
 			isa = PBXGroup;
 			children = (
-				265C5171253C6D6700D868C4 /* montereyblocker */,
+				265C5171253C6D6700D868C4 /* venturablocker */,
 				265C5170253C6D6700D868C4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,26 +50,26 @@
 		265C5170253C6D6700D868C4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				265C516F253C6D6700D868C4 /* montereyblocker */,
+				265C516F253C6D6700D868C4 /* venturablocker */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		265C5171253C6D6700D868C4 /* montereyblocker */ = {
+		265C5171253C6D6700D868C4 /* venturablocker */ = {
 			isa = PBXGroup;
 			children = (
-				70848CD226738155008A3EE0 /* montereyblocker.entitlements */,
+				70848CD226738155008A3EE0 /* venturablocker.entitlements */,
 				265C5172253C6D6700D868C4 /* main.m */,
 			);
-			path = montereyblocker;
+			path = venturablocker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		265C516E253C6D6700D868C4 /* montereyblocker */ = {
+		265C516E253C6D6700D868C4 /* venturablocker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 265C5176253C6D6700D868C4 /* Build configuration list for PBXNativeTarget "montereyblocker" */;
+			buildConfigurationList = 265C5176253C6D6700D868C4 /* Build configuration list for PBXNativeTarget "venturablocker" */;
 			buildPhases = (
 				265C516B253C6D6700D868C4 /* Sources */,
 				265C516C253C6D6700D868C4 /* Frameworks */,
@@ -79,9 +79,9 @@
 			);
 			dependencies = (
 			);
-			name = montereyblocker;
+			name = venturablocker;
 			productName = bigsurblocker;
-			productReference = 265C516F253C6D6700D868C4 /* montereyblocker */;
+			productReference = 265C516F253C6D6700D868C4 /* venturablocker */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -90,14 +90,14 @@
 		265C5167253C6D6700D868C4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1250;
+				LastUpgradeCheck = 1400;
 				TargetAttributes = {
 					265C516E253C6D6700D868C4 = {
 						CreatedOnToolsVersion = 12.2;
 					};
 				};
 			};
-			buildConfigurationList = 265C516A253C6D6700D868C4 /* Build configuration list for PBXProject "montereyblocker" */;
+			buildConfigurationList = 265C516A253C6D6700D868C4 /* Build configuration list for PBXProject "venturablocker" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,7 +110,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				265C516E253C6D6700D868C4 /* montereyblocker */,
+				265C516E253C6D6700D868C4 /* venturablocker */,
 			);
 		};
 /* End PBXProject section */
@@ -161,9 +161,10 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -181,7 +182,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -220,6 +221,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -242,16 +244,19 @@
 		265C5177253C6D6700D868C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = montereyblocker/montereyblocker.entitlements;
-				CODE_SIGN_IDENTITY = "Developer ID Application: ENVO IT AS (FXW6QXBFW5)";
+				CODE_SIGN_ENTITLEMENTS = venturablocker/venturablocker.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = FXW6QXBFW5;
+				DEVELOPMENT_TEAM = VX86H52FG7;
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = VX86H52FG7;
 				DSTROOT = $SRCROOT/build/pkgroot;
 				ENABLE_HARDENED_RUNTIME = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				OTHER_CODE_SIGN_FLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = "dk.envo-it.montereyblocker";
+				PRODUCT_BUNDLE_IDENTIFIER = "dk.envo-it.venturablocker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
@@ -260,15 +265,18 @@
 		265C5178253C6D6700D868C4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = montereyblocker/montereyblocker.entitlements;
-				CODE_SIGN_IDENTITY = "Developer ID Application: ENVO IT AS (FXW6QXBFW5)";
+				CODE_SIGN_ENTITLEMENTS = venturablocker/venturablocker.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = FXW6QXBFW5;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = VX86H52FG7;
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = VX86H52FG7;
 				DSTROOT = $SRCROOT/build/pkgroot;
 				ENABLE_HARDENED_RUNTIME = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				OTHER_CODE_SIGN_FLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = "dk.envo-it.montereyblocker";
+				PRODUCT_BUNDLE_IDENTIFIER = "dk.envo-it.venturablocker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
@@ -277,7 +285,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		265C516A253C6D6700D868C4 /* Build configuration list for PBXProject "montereyblocker" */ = {
+		265C516A253C6D6700D868C4 /* Build configuration list for PBXProject "venturablocker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				265C5174253C6D6700D868C4 /* Debug */,
@@ -286,7 +294,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		265C5176253C6D6700D868C4 /* Build configuration list for PBXNativeTarget "montereyblocker" */ = {
+		265C5176253C6D6700D868C4 /* Build configuration list for PBXNativeTarget "venturablocker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				265C5177253C6D6700D868C4 /* Debug */,
