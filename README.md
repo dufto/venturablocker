@@ -1,4 +1,4 @@
-# Monterey Blocker
+# Ventura Blocker
 
 Detect when `Install macOS Ventura.app` installer application has launched, terminate the process and display an alert.
 
