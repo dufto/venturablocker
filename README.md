@@ -1,22 +1,22 @@
 # Monterey Blocker
 
-Detect when `Install macOS Monterey.app` installer application has launched, terminate the process and display an alert.
+Detect when `Install macOS Ventura.app` installer application has launched, terminate the process and display an alert.
 
-![montereyblocker](https://raw.githubusercontent.com/Theile/montereyblocker/main/screenshot.jpg)
+![venturablocker](https://raw.githubusercontent.com/Theile/montereyblocker/main/screenshot.jpg)
 
-_This project is totally copied from the original bigsurblocker from which it is forked from._
+_This project is totally copied from the fork montereyblocker from which it is forked from._
 
-To fully uninstall `montereyblocker`, run the following (as root or with sudo), or deploy `montereyblocker-remove.sh`:
+To fully uninstall `venturablocker`, run the following (as root or with sudo), or deploy `venturablocker-remove.sh`:
 ```
 current_user_uid=$( echo "show State:/Users/ConsoleUser" | scutil | awk '/UID :/ && ! /loginwindow/ { print $3 }' )
 
-launchd_item_path="/Library/LaunchAgents/dk.envo-it.montereyblocker.plist"
+launchd_item_path="/Library/LaunchAgents/dk.envo-it.venturablocker.plist"
 launchctl bootout gui/${current_user_uid} "${launchd_item_path}"
 
-rm -f /Library/LaunchAgents/dk.envo-it.montereyblocker.plist
-rm -f /usr/local/bin/montereyblocker
+rm -f /Library/LaunchAgents/dk.envo-it.venturablocker.plist
+rm -f /usr/local/bin/venturablocker
 
-pkgutil --forget dk.envo-it.montereyblocker
+pkgutil --forget dk.envo-it.venturablocker
 ```
 
 _See [hjuutilainen/bigsurblocker](https://github.com/hjuutilainen/bigsurblocker) for the original software for blocking Big Sur and README there._
